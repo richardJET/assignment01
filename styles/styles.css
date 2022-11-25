@@ -232,6 +232,9 @@ ul {
 
 img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .wrapper {
@@ -316,9 +319,31 @@ header nav li {
 
 .about {
   background-color: #500801;
+}
+.about .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 100px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .wrapper .about-box1 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  height: 22.5vw;
+  max-height: 270px;
+}
+.about .wrapper .about-box1 img {
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: 25% 20%;
+     object-position: 25% 20%;
+}
+.about .wrapper .about-box2 {
+  width: 75%;
+  padding-left: 30px;
 }
 
 .gallery {

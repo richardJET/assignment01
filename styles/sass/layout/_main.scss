@@ -2,7 +2,28 @@
 
 .about{
     background-color: $secondary;
-    display: flex;
+
+    .wrapper{
+        display: flex;
+        padding: 100px 0;
+        align-items: center;
+
+        .about-box1{
+            flex-basis: 25%;
+            height: calc(90vw * .25);
+            max-height: calc(1080px * .25);
+
+            img{
+                object-fit: none;
+                object-position: 25% 20%;
+            }
+        }
+
+        .about-box2{
+            width: 75%;
+            padding-left: 30px;
+        }
+    }
 }
 
 .gallery{
