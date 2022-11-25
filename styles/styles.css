@@ -284,3 +284,23 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
+
+.about {
+  background-color: #500801;
+}
+
+.gallery {
+  background-color: #815600;
+}
+
+.info {
+  background-color: #500801;
+}
+
+.blog {
+  background-color: #815600;
+}
+
+footer {
+  background-color: #1D0303;
+}

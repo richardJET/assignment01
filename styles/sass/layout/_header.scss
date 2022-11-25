@@ -1,4 +1,6 @@
+@use "./../abstracts/variables" as *;
+
 header{
-    background-color: #815600;
+    background-color: $primary;
     display: flex;
 }

@@ -1,0 +1,17 @@
+@use "./../abstracts/variables" as *;
+
+.about{
+    background-color: $secondary;
+}
+
+.gallery{
+    background-color: $primary;
+}
+
+.info{
+    background-color: $secondary;
+}
+
+.blog{
+    background-color: $primary;
+}
