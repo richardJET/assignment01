@@ -230,6 +230,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   margin: 0 auto;
   width: 90%;
@@ -266,6 +270,12 @@ h3 {
   font-family: "Petit Formal Script", cursive;
   font-size: 25px;
   text-align: center;
+}
+
+footer li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 29px;
 }
 
 header {
