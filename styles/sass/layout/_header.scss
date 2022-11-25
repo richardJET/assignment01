@@ -2,5 +2,20 @@
 
 header{
     background-color: $primary;
-    display: flex;
+    padding-bottom: 50px;
+
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+
+        h1{
+            width: calc(50% - 15px);
+            align-self: center;
+            margin-right: 30px;
+        }
+
+        .img-container{
+            width: calc(50% - 15px);
+        }
+    }
 }

@@ -230,6 +230,10 @@ ul {
   list-style: none;
 }
 
+img {
+  width: 100%;
+}
+
 .wrapper {
   margin: 0 auto;
   width: 90%;
@@ -250,13 +254,11 @@ h1 {
   font-size: 90px;
   line-height: 94.3px;
   text-align: right;
-  margin: 0;
 }
 
 h2 {
   font-family: "Petit Formal Script", cursive;
   font-size: 54px;
-  margin: 0;
 }
 
 h3 {
@@ -284,15 +286,30 @@ footer li a {
 
 header {
   background-color: #815600;
+  padding-bottom: 50px;
+}
+header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+header .wrapper h1 {
+  width: calc(50% - 15px);
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-right: 30px;
+}
+header .wrapper .img-container {
+  width: calc(50% - 15px);
 }
 
-header ul {
+header nav {
   padding: 0;
+  width: 100%;
 }
-header ul li {
+header nav li {
   display: inline-block;
   margin-right: 50px;
 }
