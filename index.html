@@ -16,10 +16,10 @@
 		<div class="wrapper">
 			<nav>
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Blog</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#blog">Blog</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 			<h1>Galass Handbags</h1>
@@ -27,7 +27,7 @@
 		</div>
 	</header>
 	<main>
-		<section>
+		<section classe="about" id="about">
 			<div class="wrapper">
 				<img src="./styles/assets/square-photo.jpg" alt="dark handbag hanging from person's arm">
 				<h2>Hand crafted</h2>
@@ -36,7 +36,7 @@
 			</div>
 		</section>
 
-		<section>
+		<section class="gallery">
 			<div class="wrapper">
 			<h2>latest collection</h2>
 				<ul>
@@ -47,7 +47,7 @@
 			</div>
 		</section>
 
-		<section>
+		<section class="">
 			<div class="wrapper">
 				<ul>
 					<li><a href="">catalogue</a></li>
@@ -57,7 +57,7 @@
 			</div>
 		</section>
 
-		<section>
+		<section class="blog" id="blog">
 			<h2>Fall Trends</h2>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nobis ipsam quasi ex magnam, quis maiores at libero. Obcaecati officiis quo accusamus ullam in saepe perferendis omnis voluptates eos aliquid, illum sed at id minima quia sequi vero ratione rem repudiandae dolore doloremque magni. At, quam aliquid? Commodi, autem iste.</p>
 			<a href="">read more</a>
@@ -65,30 +65,33 @@
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus reprehenderit, doloribus veniam quo magnam cumque rem? Labore quam cumque fugit magni mollitia perferendis culpa, sequi modi nihil accusamus animi voluptatibus quia quidem corporis id eligendi omnis. Ullam quia atque distinctio sed, perspiciatis repellendus error veniam assumenda. Facere earum perferendis officia!</p>
 			<a href="">read more</a>
 		</section>
+
+		<section class="contact" id="contact">
+			<div class="wrapper">
+				<h2>Stay updated</h2>
+				<nav>
+					<ul>
+						<li><a href="">home</a></li>
+						<li><a href="">blog</a></li>
+						<li><a href="">gallery</a></li>
+						<li><a href="">contact</a></li>
+					</ul>
+				</nav>
+				<form action="subscribe">
+					<label for="email">Subscribe to our newsletter to stay updated</label>
+					<input type="email" name="email" id="email">
+					<button></button>
+				</form>
+				<h3>Contact</h3>
+				<p>info@email.com | 123-456-7890</p>
+				<p>123 some road, Toronto, ON</p>
+				<p>A5A 5A5, Canada</p>
+			</div>
+		</section>
 	</main>
 
 	<footer>
-		<div class="wrapper">
-			<h2>Stay updated</h2>
-			<nav>
-				<ul>
-					<li><a href="">home</a></li>
-					<li><a href="">blog</a></li>
-					<li><a href="">gallery</a></li>
-					<li><a href="">contact</a></li>
-				</ul>
-			</nav>
-			<form action="subscribe">
-				<label for="email">Subscribe to our newsletter to stay updated</label>
-				<input type="email" name="email" id="email">
-				<button></button>
-			</form>
-			<h3>Contact</h3>
-			<p>info@email.com | 123-456-7890</p>
-			<p>123 some road, Toronto, ON</p>
-			<p>A5A 5A5, Canada</p>
-			<p>Copyright @ 2019 HackerYou</p>
-		</div>
+		<p>Copyright @ 2019 HackerYou</p>
 	</footer>
 	
 </body>
