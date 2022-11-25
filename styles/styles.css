@@ -230,6 +230,12 @@ ul {
   list-style: none;
 }
 
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
 html {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
