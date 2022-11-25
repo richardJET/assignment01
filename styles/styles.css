@@ -226,8 +226,45 @@ html {
   overflow: hidden;
 }
 
+ul {
+  list-style: none;
+}
+
 html {
   font-family: "Roboto", sans-serif;
+  font-size: 20px;
   line-height: 29px;
   letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: "Petit Formal Script", cursive;
+  font-size: 90px;
+  line-height: 94.3px;
+  text-align: right;
+}
+
+h2 {
+  font-family: "Petit Formal Script", cursive;
+  font-size: 54px;
+}
+
+h3 {
+  font-family: "Petit Formal Script", cursive;
+  font-size: 45px;
+  text-align: right;
+}
+
+.button {
+  font-family: "Petit Formal Script", cursive;
+  font-size: 25px;
+  text-align: center;
+}
+
+header {
+  background-color: #815600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

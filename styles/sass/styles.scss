@@ -1,8 +1,5 @@
-@use "partials/_setup";
+@use "base/_setup";
+@use "base/_typography";
+@use "layout/_header";
 
 
-html{
-    font-family: 'Roboto', sans-serif;
-    line-height: 29px;
-    letter-spacing: 0.2px;
-}
