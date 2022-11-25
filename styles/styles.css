@@ -230,10 +230,6 @@ ul {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 .wrapper {
   margin: 0 auto;
   width: 90%;
@@ -246,6 +242,7 @@ html {
   line-height: 29px;
   letter-spacing: 0.2px;
   color: #ffffff;
+  font-weight: 300;
 }
 
 h1 {
@@ -253,17 +250,24 @@ h1 {
   font-size: 90px;
   line-height: 94.3px;
   text-align: right;
+  margin: 0;
 }
 
 h2 {
   font-family: "Petit Formal Script", cursive;
   font-size: 54px;
+  margin: 0;
 }
 
 h3 {
   font-family: "Petit Formal Script", cursive;
   font-size: 45px;
   text-align: right;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .button {
@@ -285,8 +289,19 @@ header {
   display: flex;
 }
 
+header ul {
+  padding: 0;
+}
+header ul li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
 .about {
   background-color: #500801;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .gallery {
