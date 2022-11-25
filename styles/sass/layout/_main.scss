@@ -60,12 +60,16 @@ section{
 
     div{
         width: 50%;
+        display: flex;
+        flex-direction: column;
     }
 
     .blog-box1,
     .blog-box3{
-        padding: 200px;
+        padding: 95px;
     }
+
+    
     .blog-box3{
         order: 1;
     }

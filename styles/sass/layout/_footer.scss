@@ -1,5 +1,53 @@
 @use "./../abstracts/variables" as *;
 
 footer{
-    background-color: $tertiary;
+    background-color: $secondary;
+    
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 120px 0;
+        h2{
+            text-align: center;
+            margin: 0;
+            width: 100%;
+        }
+
+        nav{
+            width: 25%;
+        }
+
+        form{
+            width: 50%;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-end;
+            
+            input{
+                height: 50px;
+                width: 500px;
+            }
+        }
+
+        .contact{
+            width: 25%;
+            text-align: right;
+            
+            h3{
+                margin: 0 0 20px 0;
+            }
+
+            p{
+                margin: 0;
+            }
+        }
+    }
+    .copyright{
+        background-color: $tertiary;
+        padding: 15px 0;
+        text-align: center;
+        margin: 0;
+    }
 }

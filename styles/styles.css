@@ -249,6 +249,10 @@ html {
   line-height: 29px;
   letter-spacing: 0.2px;
   color: #ffffff;
+  font-weight: 400;
+}
+
+p {
   font-weight: 300;
 }
 
@@ -384,10 +388,17 @@ section {
 }
 .blog div {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .blog .blog-box1,
 .blog .blog-box3 {
-  padding: 200px;
+  padding: 95px;
 }
 .blog .blog-box3 {
   -webkit-box-ordinal-group: 2;
@@ -396,5 +407,56 @@ section {
 }
 
 footer {
+  background-color: #500801;
+}
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 120px 0;
+}
+footer .wrapper h2 {
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+footer .wrapper nav {
+  width: 25%;
+}
+footer .wrapper form {
+  width: 50%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+footer .wrapper form input {
+  height: 50px;
+  width: 500px;
+}
+footer .wrapper .contact {
+  width: 25%;
+  text-align: right;
+}
+footer .wrapper .contact h3 {
+  margin: 0 0 20px 0;
+}
+footer .wrapper .contact p {
+  margin: 0;
+}
+footer .copyright {
   background-color: #1D0303;
+  padding: 15px 0;
+  text-align: center;
+  margin: 0;
 }
