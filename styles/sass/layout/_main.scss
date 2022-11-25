@@ -54,4 +54,19 @@ section{
 
 .blog{
     background-color: $primary;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+
+    div{
+        width: 50%;
+    }
+
+    .blog-box1,
+    .blog-box3{
+        padding: 200px;
+    }
+    .blog-box3{
+        order: 1;
+    }
 }

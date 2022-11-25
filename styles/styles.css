@@ -375,6 +375,24 @@ section {
 
 .blog {
   background-color: #815600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+}
+.blog div {
+  width: 50%;
+}
+.blog .blog-box1,
+.blog .blog-box3 {
+  padding: 200px;
+}
+.blog .blog-box3 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 footer {
