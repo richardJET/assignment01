@@ -6,7 +6,8 @@ footer{
     .wrapper{
         display: flex;
         flex-wrap: wrap;
-        padding: 120px 0;
+        padding: 100px 0;
+
         h2{
             text-align: center;
             margin: 0;
@@ -24,7 +25,11 @@ footer{
             flex-wrap: wrap;
             justify-content: center;
             align-items: flex-end;
-            
+
+            label{
+                padding-top: 50px;
+            }
+
             input{
                 height: 48.75px;
                 width: 400px;

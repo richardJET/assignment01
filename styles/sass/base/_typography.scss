@@ -9,7 +9,8 @@ html {
     font-weight: 400;
 }
 
-p{
+p,
+label{
     font-weight: 300;
 }
 
@@ -25,13 +26,14 @@ h2{
     font-size: 54px;
 }
 
-h3{
+h3,
+.info a{
     font-family: $headerFont;
     font-size: 45px;
     text-align: right;
 }
 
-a {
+a{
     text-decoration: none;
     color: #ffffff;
 }

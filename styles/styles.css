@@ -252,7 +252,8 @@ html {
   font-weight: 400;
 }
 
-p {
+p,
+label {
   font-weight: 300;
 }
 
@@ -268,7 +269,8 @@ h2 {
   font-size: 54px;
 }
 
-h3 {
+h3,
+.info a {
   font-family: "Petit Formal Script", cursive;
   font-size: 45px;
   text-align: right;
@@ -375,6 +377,26 @@ section {
 
 .info {
   background-color: #500801;
+  padding-top: 60px;
+}
+.info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.info ul li {
+  width: 30%;
+  text-align: center;
+  height: 100px;
+}
+.info ul img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .blog {
@@ -393,6 +415,9 @@ section {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .blog .blog-box1,
 .blog .blog-box3 {
@@ -413,7 +438,7 @@ footer .wrapper {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 120px 0;
+  padding: 100px 0;
 }
 footer .wrapper h2 {
   text-align: center;
@@ -437,6 +462,9 @@ footer .wrapper form {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+footer .wrapper form label {
+  padding-top: 50px;
 }
 footer .wrapper form input {
   height: 48.75px;

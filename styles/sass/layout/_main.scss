@@ -50,6 +50,28 @@ section{
 
 .info{
     background-color: $secondary;
+    padding-top: 60px;
+ 
+    ul{
+        display: flex;
+        justify-content: space-between;
+
+        li{
+            width: 30%;
+            text-align: center;   
+            height: 100px;
+            
+        }
+
+        
+        img{
+            object-fit: contain;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+    }
+
 }
 
 .blog{
@@ -62,6 +84,7 @@ section{
         width: 50%;
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
     }
 
     .blog-box1,
