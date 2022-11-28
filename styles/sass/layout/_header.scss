@@ -3,6 +3,7 @@
 header{
     background-color: $primary;
     padding-bottom: 50px;
+    position: relative;
 
     .wrapper{
         display: flex;
@@ -17,5 +18,11 @@ header{
         .img-container{
             width: calc(50% - 15px);
         }
+    }
+
+    .socials{
+        position: absolute;
+        bottom: 10px;
+        right: 30px;
     }
 }

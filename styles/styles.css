@@ -296,6 +296,7 @@ footer li a {
 header {
   background-color: #815600;
   padding-bottom: 50px;
+  position: relative;
 }
 header .wrapper {
   display: -webkit-box;
@@ -312,6 +313,11 @@ header .wrapper h1 {
 }
 header .wrapper .img-container {
   width: calc(50% - 15px);
+}
+header .socials {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
 }
 
 header nav {
