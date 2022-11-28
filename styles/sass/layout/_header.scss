@@ -25,4 +25,12 @@ header{
         bottom: 10px;
         right: 30px;
     }
+
+    @media (max-width: 480px) {
+
+        .wrapper{
+            flex-direction: column;
+        }
+    }
 }
+
