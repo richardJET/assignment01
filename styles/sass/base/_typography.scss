@@ -33,8 +33,7 @@ h2{
     }
 }
 
-h3,
-.info a{
+h3{
     font-family: $headerFont;
     font-size: 45px;
     text-align: right;
@@ -45,7 +44,8 @@ a{
     color: #ffffff;
 }
 
-.button{
+.button,
+.info a{
     font-family: $headerFont;
     font-size: 25px;
     text-align: center;

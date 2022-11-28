@@ -4,7 +4,8 @@ header nav{
     padding: 0;
     width: 100%;
 
-    label{
+    label,
+    input{
         display: none;
     }
 
@@ -37,10 +38,10 @@ header nav{
             display: inline-block;
             cursor: pointer;
         }
-        
+
         input{
             position: absolute;
-            left: -100vw;
+            left: -1000vw;
         }
     }
     nav input:checked ~ ul{
