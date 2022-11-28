@@ -263,10 +263,20 @@ h1 {
   line-height: 94.3px;
   text-align: right;
 }
+@media (max-width: 480px) {
+  h1 {
+    font-size: 60px;
+  }
+}
 
 h2 {
   font-family: "Petit Formal Script", cursive;
   font-size: 54px;
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 40px;
+  }
 }
 
 h3,
@@ -325,6 +335,21 @@ header .socials {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
+  }
+  header .wrapper h1 {
+    width: 100%;
+    margin: 80px 0 0 0;
+  }
+  header .wrapper .img-container {
+    width: 100%;
+  }
+  header .wrapper .img-container img {
+    -o-object-position: -50px 50%;
+       object-position: -50px 50%;
+  }
+  header .socials {
+    display: none;
   }
 }
 
@@ -376,6 +401,11 @@ header nav li {
 section {
   padding: 120px 0;
 }
+@media (max-width: 480px) {
+  section {
+    padding: 60px 0;
+  }
+}
 
 .about {
   background-color: #500801;
@@ -401,8 +431,36 @@ section {
      object-position: 25% 20%;
 }
 .about .wrapper .about-box2 {
-  width: 75%;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
   padding-left: 30px;
+}
+@media (max-width: 480px) {
+  .about .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .wrapper .about-box1,
+.about .wrapper .about-box2 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .wrapper .about-box2 {
+    padding: 0;
+  }
 }
 
 .gallery {

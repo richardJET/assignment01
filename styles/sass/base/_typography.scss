@@ -19,11 +19,18 @@ h1 {
     font-size: 90px;
     line-height: 94.3px;
     text-align: right;
+
+    @media (max-width: 480px) {
+        font-size: 60px;
+    }
 }
 
 h2{
     font-family: $headerFont;
     font-size: 54px;
+    @media (max-width: 480px) {
+            font-size: 40px;
+    }
 }
 
 h3,

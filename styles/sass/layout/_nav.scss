@@ -21,7 +21,7 @@ header nav{
         width: 71.5px;
         height: 71.5px;
         right: 0;
-        
+
         ul {
             display: none;
             padding: 0;
@@ -32,18 +32,17 @@ header nav{
             margin: 0;
             padding: 0 20px;
         }
-        
+
         label{
             display: inline-block;
             cursor: pointer;
         }
+        
         input{
             position: absolute;
             left: -100vw;
         }
     }
-
-    
     nav input:checked ~ ul{
             display: inline-block;
             background-color: $primary;

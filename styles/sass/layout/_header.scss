@@ -30,6 +30,23 @@ header{
 
         .wrapper{
             flex-direction: column;
+            width: 100%;
+
+            h1{
+                width: 100%;
+                margin: 80px 0 0 0;
+            }
+
+            .img-container{
+                width: 100%;
+
+                img{
+                    object-position: -50px 50%;
+                }
+            }
+        }
+        .socials{
+            display: none;
         }
     }
 }
