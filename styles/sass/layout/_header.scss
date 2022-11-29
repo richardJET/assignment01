@@ -26,7 +26,7 @@ header{
         right: 30px;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: $mobile) {
 
         .wrapper{
             flex-direction: column;
@@ -45,6 +45,7 @@ header{
                 }
             }
         }
+        
         .socials{
             display: none;
         }

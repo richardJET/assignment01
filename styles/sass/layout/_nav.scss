@@ -10,9 +10,9 @@ header nav{
     }
 
     li {
-            display: inline-block;
-            margin-right: 50px;
-        }
+        display: inline-block;
+        margin-right: 50px;
+    }
 }
 
 @media (max-width: $mobile) {
@@ -44,6 +44,7 @@ header nav{
             left: -1000vw;
         }
     }
+
     nav input:checked ~ ul{
             display: inline-block;
             background-color: $primary;

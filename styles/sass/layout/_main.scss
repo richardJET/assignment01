@@ -29,8 +29,10 @@ section{
             flex-basis: 75%;
             padding-left: 30px;
         }
+
         @media (max-width: $mobile) {
             flex-direction: column;
+
             .about-box1,
             .about-box2{
                 flex-basis: 100%;
@@ -38,15 +40,12 @@ section{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-
             }
 
             .about-box2{
                 padding: 0;
-            }
-            
+            } 
         }
-    
     }
 }
 
@@ -127,13 +126,11 @@ section{
                     height: 120px;
                 }
             }
-        }
-
-        
     }
 
-       
+        
 }
+
 
 .blog{
     background-color: $primary;
