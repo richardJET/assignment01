@@ -15,7 +15,7 @@ header nav{
         }
 }
 
-@media (max-width: 480px) {
+@media (max-width: $mobile) {
     header nav{
         position: fixed;
         background-color: $primary;

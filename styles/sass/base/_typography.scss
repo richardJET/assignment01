@@ -1,9 +1,8 @@
 @use "./../abstracts/variables" as *;
+@use "./../abstracts/mixins" as *;
 
 html {
-    font-family: $baseFont;
-    font-size: 20px;
-    line-height: 29px;
+    @include fontStyle($baseFont, 20px, null, 29px);
     letter-spacing: 0.2px;
     color: #ffffff;
     font-weight: 400;
@@ -15,28 +14,23 @@ label{
 }
 
 h1 {
-    font-family: $headerFont;
-    font-size: 90px;
-    line-height: 94.3px;
-    text-align: right;
+    @include fontStyle($headerFont, 90px, right, 94.3px);
 
-    @media (max-width: 480px) {
+    @media (max-width: $mobile) {
         font-size: 60px;
     }
 }
 
 h2{
-    font-family: $headerFont;
-    font-size: 54px;
-    @media (max-width: 480px) {
+    @include fontStyle($headerFont, 54px, null, null);
+
+    @media (max-width: $mobile) {
             font-size: 40px;
     }
 }
 
 h3{
-    font-family: $headerFont;
-    font-size: 45px;
-    text-align: right;
+    @include fontStyle($headerFont, 45px, right, null);
 }
 
 a{
@@ -44,15 +38,14 @@ a{
     color: #ffffff;
 }
 
-.button,
-.info a{
-    font-family: $headerFont;
-    font-size: 25px;
-    text-align: center;
+.button{
+    @include fontStyle($headerFont, 25px, center, null);
+}
+
+.info a {
+    @include fontStyle($headerFont, 35px, center, null);
 }
 
 footer li a{
-    font-family: $baseFont;
-    font-size: 20px;
-    line-height: 29px;
+    @include fontStyle($baseFont, 20px, null, 29px);
 }

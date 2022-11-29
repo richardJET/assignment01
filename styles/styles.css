@@ -260,10 +260,10 @@ label {
 h1 {
   font-family: "Petit Formal Script", cursive;
   font-size: 90px;
-  line-height: 94.3px;
   text-align: right;
+  line-height: 94.3px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   h1 {
     font-size: 60px;
   }
@@ -273,7 +273,7 @@ h2 {
   font-family: "Petit Formal Script", cursive;
   font-size: 54px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   h2 {
     font-size: 40px;
   }
@@ -290,10 +290,15 @@ a {
   color: #ffffff;
 }
 
-.button,
-.info a {
+.button {
   font-family: "Petit Formal Script", cursive;
   font-size: 25px;
+  text-align: center;
+}
+
+.info a {
+  font-family: "Petit Formal Script", cursive;
+  font-size: 35px;
   text-align: center;
 }
 
@@ -366,7 +371,7 @@ header nav li {
   margin-right: 50px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   header nav {
     position: fixed;
     background-color: #815600;
@@ -402,7 +407,7 @@ header nav li {
 section {
   padding: 120px 0;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   section {
     padding: 60px 0;
   }
@@ -436,7 +441,7 @@ section {
       flex-basis: 75%;
   padding-left: 30px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .about .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -484,7 +489,7 @@ section {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .gallery ul {
     padding: 50px 0 0 0;
   }
@@ -517,11 +522,11 @@ section {
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
+  margin: 0;
 }
 .info ul li {
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
-  text-align: center;
+  -ms-flex-preferred-size: 33.3333333333%;
+      flex-basis: 33.3333333333%;
   height: 170px;
 }
 .info ul a {
@@ -539,9 +544,9 @@ section {
 .info ul a img {
   -o-object-fit: contain;
      object-fit: contain;
-  padding: 25px;
+  padding: 30px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .info ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -551,8 +556,8 @@ section {
         -ms-flex-align: center;
             align-items: center;
   }
-  .info li {
-    margin: 20px 0;
+  .info ul li img {
+    height: 120px;
   }
 }
 
@@ -668,7 +673,7 @@ footer .wrapper .contact h3 {
 footer .wrapper .contact p {
   margin: 0;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   footer .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -695,6 +700,9 @@ footer .wrapper .contact {
 footer .wrapper h3 {
     padding-top: 25px;
     text-align: center;
+  }
+  footer .wrapper form input {
+    width: 100%;
   }
 }
 footer .copyright {
