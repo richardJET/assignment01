@@ -631,10 +631,12 @@ footer .wrapper h2 {
   width: 100%;
 }
 footer .wrapper nav {
-  width: 25%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
 }
 footer .wrapper form {
-  width: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -656,7 +658,8 @@ footer .wrapper form input {
   width: 400px;
 }
 footer .wrapper .contact {
-  width: 25%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
   text-align: right;
 }
 footer .wrapper .contact h3 {
@@ -664,6 +667,35 @@ footer .wrapper .contact h3 {
 }
 footer .wrapper .contact p {
   margin: 0;
+}
+@media (max-width: 480px) {
+  footer .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 0;
+  }
+  footer .wrapper nav,
+footer .wrapper form,
+footer .wrapper .contact {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  footer .wrapper nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 0 30px 0;
+  }
+  footer .wrapper .contact,
+footer .wrapper h3 {
+    padding-top: 25px;
+    text-align: center;
+  }
 }
 footer .copyright {
   background-color: #1D0303;
